@@ -2,4 +2,25 @@
 <h1>testing styles for h1</h1>
 <h2> h2 text </h2> -->
 <!-- <img src="/google-logo.svg" alt=""> -->
- <app-parent></app-parent>
+ <!-- <app-parent></app-parent> -->
+<!--  Creating admin dashboard -->
+ <!-- <nav class="fixed top-0 w-full"> --tailwind
+      <ul class="flex w-full px=5 py-2 justify-between">--tailwind-->
+    <!-- <nav style="position: fixed; top: 0; width: 100%;"> 
+    <ul style="
+    display: flex;
+    width: 100%;    
+    justify-content: space-around;
+    background-color: #10b981;
+    ">
+        <li>My Notes</li>
+        <li>Welcome</li>
+    </ul>
+ </nav> -->
+ <!--before using ngmodel or forms module, trigger onchange event-->
+<!-- Name : <input type="text" class="textstyle" [value]=" name" (change)="onChange($event)"> -->
+ <!-- Check the following after using formsmodule -->
+Name : <input type="text" class="textstyle" [(ngModel)]="name">
+{{name}}
+<br>
+<button>Save</button>

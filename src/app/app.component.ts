@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ParentComponent } from "./parent/parent.component";
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ParentComponent],
+  imports: [RouterOutlet, ParentComponent,FormsModule],
  templateUrl: './app.component.html',
   //For multilines - use backtick , you can embed template inline or in seperate file 
   //  like templateURL
@@ -27,4 +28,12 @@ import { ParentComponent } from "./parent/parent.component";
 
 export class AppComponent {
   title = 'TestParentChildRoutingProject';
+  name="Angular";
+
+  // onChange($e:Event){
+  //   console.log($e);
+  //   this.name= ($e.target as HTMLInputElement).value;
+  // }
+  
+
 }
